@@ -20,7 +20,7 @@ public class HelloController {
 
     }
 
-    @GetMapping("/hello-v2")
+    @GetMapping("/hello-v2") //문자 10,000 넘어
     public String helloV2(@RequestParam Integer data){
         System.out.println("data= " + data);
         return "ok";
